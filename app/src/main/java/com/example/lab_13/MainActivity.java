@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     public void but_sqrt_click(View v)
     {
         String num1 = number1.getText().toString();
-        String num2 = number2.getText().toString();
+
         HttpRequest r = new HttpRequest(this)
         {
             @Override
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(response);
             }
         };
-        r.make_request(url + "default/" + num1 + " sqrt " + num2);
+        r.make_request(url +"default/" +"sqrt"+ num1);
     }
 
     public void but_pow_click(View v)
